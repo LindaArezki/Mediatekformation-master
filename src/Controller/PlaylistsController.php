@@ -49,7 +49,7 @@ class PlaylistsController extends AbstractController {
     public function index(): Response{
         $playlists = $this->playlistRepository->findAllOrderBy('name', 'ASC');
         $categories = $this->categorieRepository->findAll();
-        return $this->render("pages/playlists.html.twig", [
+        return $this->render("pages/playlists.html.twig ", [
             'playlists' => $playlists,
             'categories' => $categories            
         ]);

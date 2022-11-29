@@ -45,7 +45,7 @@ class PlaylistRepository extends ServiceEntityRepository
      * @param type $ordre
      * @return Playlist[]
      */
-    public function findAllOrderBy($champ, $ordre): array{
+  public function findAllOrderBy($champ, $ordre): array{
         return $this->createQueryBuilder('p')
                 ->select('p.id id')
                 ->addSelect('p.name name')
@@ -59,7 +59,6 @@ class PlaylistRepository extends ServiceEntityRepository
                 ->getQuery()
                 ->getResult();       
     }
-
     /**
      * Enregistrements dont un champ contient une valeur
      * ou tous les enregistrements si la valeur est vide
@@ -82,7 +81,7 @@ class PlaylistRepository extends ServiceEntityRepository
                     ->where('p.'.$champ.' LIKE :valeur')
                     ->setParameter('valeur', '%'.$valeur.'%')
                     ->groupBy('p.id')
-                    ->addGroupBy('c.name')
+                    ->addGroupBy('c.name ')
                     ->orderBy('p.name', 'ASC')
                     ->addOrderBy('c.name')
                     ->getQuery()
