@@ -21,7 +21,7 @@ class CategorieRepository extends ServiceEntityRepository
         parent::__construct($registry, Categorie::class);
     }
 
-    public function add(Categorie $entity, bool $flush = false): void
+     public function add(Categorie $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -38,6 +38,8 @@ class CategorieRepository extends ServiceEntityRepository
             $this->getEntityManager()->flush();
         }
     }
+    
+     
     
     /**
      * Retourne la liste des catégories des formations d'une playlist
