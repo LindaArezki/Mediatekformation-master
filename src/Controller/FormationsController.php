@@ -29,6 +29,8 @@ class FormationsController extends AbstractController {
     
     private const RETOURNEFORMATION = "pages/formations.html.twig";
     
+    
+    
     function __construct(FormationRepository $formationRepository, CategorieRepository $categorieRepository) {
         $this->formationRepository = $formationRepository;
         $this->categorieRepository= $categorieRepository;
