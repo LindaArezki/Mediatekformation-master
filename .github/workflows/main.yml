@@ -6,12 +6,12 @@ jobs:
  runs-on: ubuntu-latest
  steps:
  - name: Get latest code
- uses: actions/checkout@v2
-
- - name: Sync files
- uses: SamKirkland/FTP-Deploy-Action@4.3.0
- with:
- server: https://mediatekformation-master.go.yj.fr/
- server-dir: /public_html/mediatekformation-master/
- username: nufnxwtv
- password: ${{ secrets.ftp_password }}
+   uses: actions/checkout@v2
+   
+- name: Sync files
+  uses: SamKirkland/FTP-Deploy-Action@4.3.0
+  with:
+    server: https://mediatekformation-master.go.yj.fr/
+    server-dir: /public_html/mediatekformation-master/
+    username: nufnxwtv
+    password: ${{ secrets.ftp_password }}
