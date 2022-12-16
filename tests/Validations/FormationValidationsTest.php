@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Tests\Validation;
+namespace App\Tests\Validations;
 
 use App\Entity\Formation;
 use DateTime;
