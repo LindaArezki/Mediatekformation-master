@@ -13,6 +13,6 @@ jobs:
      with:
        server: node148-eu.n0c.com
        server-dir: /public_html/mediatekformation-master/
-       username: linda@mediatekformation-master.go.yj.fr 
-       password: ${{ secrets.ftp_password }} 
+       username: linda@mediatekformation-master.go.yj.fr
+       password: ${{ secrets.ftp_password }}
 
