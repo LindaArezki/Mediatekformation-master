@@ -39,7 +39,6 @@ class CategorieRepository extends ServiceEntityRepository
         }
     }
     
-     
     
     /**
      * Retourne la liste des catégories des formations d'une playlist
@@ -56,5 +55,20 @@ class CategorieRepository extends ServiceEntityRepository
                 ->getQuery()
                 ->getResult();        
     }    
+
+    /**
+     * Trie les noms qui sont égaux à un nom prédéfini
+     * @param type $name
+     * @return string
+     */
+    public function findAllEqual($name): array {
+        return $this->createQueryBuilder('c')
+                        ->select('c.name name')
+                        ->where('c.name=:name')
+                        ->setParameter('name', $name)
+                        ->getQuery()
+                        ->getResult();
+    }
+
 
 }

@@ -71,14 +71,18 @@ class AdminControllerCategories extends AbstractController{
      */
     public function ajout(Request $request): Response{
         $name = $request->get("name");
-        $categories = new Categorie();
-        $categories->setName($name);
-        $this->categorieRepository->add($categories, true);
-        return $this->redirectToRoute('admin.categorie');       
-    }        
-  
-    
+        $namecategorie = $this->categorieRepository->findAllEqual($name);
+        if ($namecategorie == false) {
+            $categories = new Categorie();
+            $categories->setName($name);
+            $this->categorieRepository->add($categories, true);
+            return $this->redirectToRoute('admin.categorie'); 
+            
+        } 
+        return $this->redirectToRoute('admin.categorie');   
+    }
 }
+
 
    
 
