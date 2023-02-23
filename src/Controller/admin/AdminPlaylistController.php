@@ -41,6 +41,10 @@ class AdminPlaylistController extends AbstractController {
     private const RETOURNEPPLAYLIST= "admin/admin.playlist.html.twig";
     private const RETOURNEADMINPLAYLIST = "admin.playlist";
     
+    /**
+     * @param  FormationRepository $formationrepository 
+     * 
+     */
     function __construct(PlaylistRepository $playlistRepository,CategorieRepository $categorieRepository, FormationRepository $formationRespository) 
     {
         $this->playlistRepository = $playlistRepository;

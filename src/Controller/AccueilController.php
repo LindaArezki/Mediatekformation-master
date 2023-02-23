@@ -18,14 +18,12 @@ class AccueilController extends AbstractController{
      */
     private $repository;
     
-    /**
-     * 
+    /** 
      * @param FormationRepository $repository
      */
     public function __construct(FormationRepository $repository) {
         $this->repository = $repository;
-    }   
-    
+    }       
     /**
      * @Route("/", name="accueil")
      * @return Response
@@ -35,8 +33,7 @@ class AccueilController extends AbstractController{
         return $this->render("pages/accueil.html.twig", [
             'formations' => $formations
         ]); 
-    }
-    
+    }    
     /**
      * @Route("/cgu", name="cgu")
      * @return Response
