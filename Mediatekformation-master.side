@@ -1,0 +1,665 @@
+{
+  "id": "a6f2765f-c8ea-42f0-a571-a2806596dd60",
+  "version": "2.0",
+  "name": "Mediatekformation-master",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "6d9527b3-668d-4ede-b4f0-e7f67fd5cce6",
+    "name": "test",
+    "commands": [{
+      "id": "da0ffa21-7f41-4cec-a790-ae8d49c5a2ac",
+      "comment": "",
+      "command": "open",
+      "target": "/mediatekformation-master/public/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ed8b230-ffea-49ac-8fe9-cba3e312513e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1477x881",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80da6ba3-7bcf-4b1c-b962-246d4d5883f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong:nth-child(2) > .link-info",
+      "targets": [
+        ["css=strong:nth-child(2) > .link-info", "css:finder"],
+        ["xpath=(//a[contains(text(),'Formations')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/mediatekformation-master/public/index.php/formations')])[2]", "xpath:href"],
+        ["xpath=//strong/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b98dd8b8-0a8b-4148-9da0-23da604406f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=<",
+      "targets": [
+        ["linkText=<", "linkText"],
+        ["css=.text-left:nth-child(1) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'<')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/title/ASC')]", "xpath:href"],
+        ["xpath=//th/a", "xpath:position"],
+        ["xpath=//a[contains(.,'<')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca8851a3-1434-4aeb-bf87-4dc7273077eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=>",
+      "targets": [
+        ["linkText=>", "linkText"],
+        ["css=.text-left:nth-child(1) > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'>')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/title/DESC')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'>')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b169fdc-0aac-4b6e-ad0d-1bd85a39f90d",
+      "comment": "",
+      "command": "click",
+      "target": "name=recherche",
+      "targets": [
+        ["name=recherche", "name"],
+        ["css=.text-left:nth-child(1) .sm", "css:finder"],
+        ["xpath=//input[@name='recherche']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe238ba4-7686-4629-8942-8e3c92ad6453",
+      "comment": "",
+      "command": "type",
+      "target": "name=recherche",
+      "targets": [
+        ["name=recherche", "name"],
+        ["css=.text-left:nth-child(1) .sm", "css:finder"],
+        ["xpath=//input[@name='recherche']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "eclipse"
+    }, {
+      "id": "44659677-61d5-44cc-a780-26a4d0a3f3e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(1) > .form-inline .btn",
+      "targets": [
+        ["css=.text-left:nth-child(1) > .form-inline .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'filtrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d8e34b-2322-4493-be44-76f45b9f001c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2) > .btn:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(2) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'<')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/name/ASC/playlist')]", "xpath:href"],
+        ["xpath=//th[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1db3ce2a-5014-4191-a9f5-585a72aef349",
+      "comment": "",
+      "command": "click",
+      "target": "css=.align-top:nth-child(2)",
+      "targets": [
+        ["css=.align-top:nth-child(2)", "css:finder"],
+        ["xpath=//th[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d38456e0-fc5b-49ee-bbc1-f452fa736bc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2) > .btn:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(2) > .btn:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'>')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/name/DESC/playlist')]", "xpath:href"],
+        ["xpath=//th[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a72b2e53-56f6-4ec5-9222-e82faedbd670",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2) .sm",
+      "targets": [
+        ["css=.text-left:nth-child(2) .sm", "css:finder"],
+        ["xpath=(//input[@name='recherche'])[2]", "xpath:attributes"],
+        ["xpath=//th[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9e9314f-2d2d-4f8c-a4e1-3b245b2bb2d5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.text-left:nth-child(2) .sm",
+      "targets": [
+        ["css=.text-left:nth-child(2) .sm", "css:finder"],
+        ["xpath=(//input[@name='recherche'])[2]", "xpath:attributes"],
+        ["xpath=//th[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "uml"
+    }, {
+      "id": "2a0edf5f-dfa0-4263-8238-0495c3bf3600",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(2) > .form-inline .btn",
+      "targets": [
+        ["css=.text-left:nth-child(2) > .form-inline .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//th[2]/form/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96f6146e-d1a0-4cae-b6e4-eff8c6e594ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.align-top:nth-child(3)",
+      "targets": [
+        ["css=.align-top:nth-child(3)", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "207e7360-5d8e-48e0-aa29-727592d7c9a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=recherche",
+      "targets": [
+        ["id=recherche", "id"],
+        ["css=#recherche", "css:finder"],
+        ["xpath=//select[@id='recherche']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64917bc6-54f6-45bf-8102-d81e01431b31",
+      "comment": "",
+      "command": "select",
+      "target": "id=recherche",
+      "targets": [],
+      "value": "label=Java"
+    }, {
+      "id": "708a03af-c678-49c9-9c9b-3859817e08f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn:nth-child(2)",
+      "targets": [
+        ["css=.text-center > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'<')])[3]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/publishedAt/ASC')]", "xpath:href"],
+        ["xpath=//th[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce03a046-bbd9-42a5-b840-d954f24da5e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center > .btn:nth-child(3)",
+      "targets": [
+        ["css=.text-center > .btn:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'>')])[3]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/formations/tri/publishedAt/DESC')]", "xpath:href"],
+        ["xpath=//th[4]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1963a261-95d7-48ab-9bbf-1fef92eb0b6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.align-middle:nth-child(1) img",
+      "targets": [
+        ["css=.align-middle:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt=\"L'image en miniature des formations\"]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b92be361-803f-43d9-9474-ea36c98c6f6b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e0d2e2b-c766-461f-aaca-bbb3f4cf7ffb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-large-play-button",
+      "targets": [
+        ["css=.ytp-large-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6f5fa50-9ae9-4934-811d-0a20e515a039",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6957f7e3-8504-40eb-a422-4cb998641bc3",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "448a437f-0099-4e92-881c-ee380f532f7d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Playlists",
+      "targets": [
+        ["linkText=Playlists", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Playlists')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Playlists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bc3a8a5-bbf0-4570-b8cc-78d202ae962e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=<",
+      "targets": [
+        ["linkText=<", "linkText"],
+        ["css=.text-left:nth-child(1) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'<')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists/tri/name/ASC')]", "xpath:href"],
+        ["xpath=//th/a", "xpath:position"],
+        ["xpath=//a[contains(.,'<')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5e363f9-59c7-4cfb-bb99-7a4613e6cd6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=>",
+      "targets": [
+        ["linkText=>", "linkText"],
+        ["css=.text-left:nth-child(1) > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'>')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists/tri/name/DESC')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'>')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4180cee-ba80-45ae-bd91-a229c4c1f660",
+      "comment": "",
+      "command": "click",
+      "target": "name=recherche",
+      "targets": [
+        ["name=recherche", "name"],
+        ["css=.sm", "css:finder"],
+        ["xpath=//input[@name='recherche']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52367a96-d2f2-4002-9d1d-bbd8ddc4a8cd",
+      "comment": "",
+      "command": "type",
+      "target": "name=recherche",
+      "targets": [
+        ["name=recherche", "name"],
+        ["css=.sm", "css:finder"],
+        ["xpath=//input[@name='recherche']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "COURS"
+    }, {
+      "id": "448179fe-8ab2-4f46-a8a5-e3ee03600f89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mb-2:nth-child(3)",
+      "targets": [
+        ["css=.mb-2:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'filtrer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ea6162b-dce6-4a54-8627-f05c50bc6f4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=recherche",
+      "targets": [
+        ["id=recherche", "id"],
+        ["css=#recherche", "css:finder"],
+        ["xpath=//select[@id='recherche']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be3e0ae-b231-457c-9f2a-b84df6507d7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.align-top:nth-child(2)",
+      "targets": [
+        ["css=.align-top:nth-child(2)", "css:finder"],
+        ["xpath=//th[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4915bf8-d461-4d65-919f-e85a8c48b7d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=recherche",
+      "targets": [
+        ["id=recherche", "id"],
+        ["css=#recherche", "css:finder"],
+        ["xpath=//select[@id='recherche']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9c26ef-ccec-4309-ac6a-d2bf060a3e2c",
+      "comment": "",
+      "command": "select",
+      "target": "id=recherche",
+      "targets": [],
+      "value": "label=Java"
+    }, {
+      "id": "d919da9c-4b11-4cd2-a904-46b54290aefe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3) > .btn:nth-child(2)",
+      "targets": [
+        ["css=.text-left:nth-child(3) > .btn:nth-child(2)", "css:finder"],
+        ["xpath=(//a[contains(text(),'<')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists/tri/nbformations/ASC')]", "xpath:href"],
+        ["xpath=//th[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "107d31a6-9ed0-479f-9527-5dcf5f7982b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left:nth-child(3) > .btn:nth-child(3)",
+      "targets": [
+        ["css=.text-left:nth-child(3) > .btn:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'>')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists/tri/nbformations/DESC')]", "xpath:href"],
+        ["xpath=//th[3]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6d85163-a411-40f1-a846-11e42d1ba848",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voir détail",
+      "targets": [
+        ["linkText=Voir détail", "linkText"],
+        ["css=.align-middle:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Voir détail')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/playlists/playlist/13')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voir détail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "185b6aeb-33de-4b4c-99b5-9391161d1a7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-md-auto img",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-md-auto img", "css:finder"],
+        ["xpath=//img[@alt=\"L'image en miniature des formations\"]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b64b0f-aa61-4966-b32b-d9a6e4b50928",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d48b1f6-16d7-4f42-abaf-0aa319526e31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-large-play-button",
+      "targets": [
+        ["css=.ytp-large-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33b20408-5f30-42cc-94fb-e193595db216",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-large-play-button",
+      "targets": [
+        ["css=.ytp-large-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a77807d-0f8f-4247-8e12-df17abe04cd9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd7ec81-ee05-4f9b-995f-46ed1318166e",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a801c20-a3ca-4d85-a41e-47226f91d337",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accueil",
+      "targets": [
+        ["linkText=Accueil", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Accueil')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accueil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd3d0bb5-c4f7-4000-9bc2-73bb24c3200b",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong:nth-child(4) > .link-info",
+      "targets": [
+        ["css=strong:nth-child(4) > .link-info", "css:finder"],
+        ["xpath=(//a[contains(text(),'Playlists')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/mediatekformation-master/public/index.php/playlists')])[2]", "xpath:href"],
+        ["xpath=//strong[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b8678b-d453-4713-be0b-573d31c80c56",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accueil",
+      "targets": [
+        ["linkText=Accueil", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Accueil')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accueil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f78bfa61-0135-4b9b-8d94-f39888513ed7",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1) .card-img-top",
+      "targets": [
+        ["css=td:nth-child(1) .card-img-top", "css:finder"],
+        ["xpath=//img[@alt=\"L'image de formation\"]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cab35f8f-f21f-45c8-a121-42459ba2cf71",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab40697-b063-4dba-b20c-59a5e73a3b1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-cued-thumbnail-overlay-image",
+      "targets": [
+        ["css=.ytp-cued-thumbnail-overlay-image", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "378c1df3-0473-478c-9f54-c0b9242a2144",
+      "comment": "",
+      "command": "click",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e5e4cf7-649a-44af-b36c-29308abda5c6",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a41a5f7-63d2-425d-b5ad-32a3d31b88f8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accueil",
+      "targets": [
+        ["linkText=Accueil", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Accueil')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accueil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c0fbe05-3774-491c-8bec-bc34d9548087",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(2) .card-img-top",
+      "targets": [
+        ["css=td:nth-child(2) .card-img-top", "css:finder"],
+        ["xpath=(//img[@alt=\"L'image de formation\"])[2]", "xpath:img"],
+        ["xpath=//td[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "104c009d-49fc-43ce-9e19-5b60187fd310",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ff56cd8-325e-49e3-aa4f-1f0809144e70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-cued-thumbnail-overlay-image",
+      "targets": [
+        ["css=.ytp-cued-thumbnail-overlay-image", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[4]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a75928e3-9c77-42f6-8e17-9fa13f7745d0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "db00cfe8-eeae-4b56-b244-dc146e12bac1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accueil",
+      "targets": [
+        ["linkText=Accueil", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Accueil')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mediatekformation-master/public/index.php/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accueil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4729df82-e4a7-4f9c-a556-81d8ad9748ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6d9527b3-668d-4ede-b4f0-e7f67fd5cce6"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
