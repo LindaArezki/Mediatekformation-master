@@ -28,10 +28,10 @@ class FormationType extends AbstractType
                 'required' => true
             ])
             ->add('title',TextType::class, [
-                'label' => 'Intitulé de la nouvelle formation*',
+                'label' => 'Intitulé de la formation*',
                 'required' => true])
             ->add('description', TextareaType::class, [
-                'label' => 'Description de la nouvelle formation',
+                'label' => 'Description de la formation',
                 'required' => false
             ])
             ->add('videoId')

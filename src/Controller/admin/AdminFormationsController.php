@@ -83,22 +83,26 @@ class AdminFormationsController extends AbstractController {
      * @return Response
      */
     public function findAllContain($champ, Request $request, $table=""): Response{
-        $valeur = $request->get("recherche");
-        if($table !="")
-        {
-            $formations = $this->formationRepository->findByContainValueT($champ, $valeur, $table);
-        }else 
-        {
-            $formations = $this->formationRepository->findByContainValue($champ, $valeur);
-        }
-        $categories = $this->categorieRepository->findAll();
-        return $this->render(self::RETOURNEPFORMATION, [
-            'formations' => $formations,
-            'categories' => $categories,
-            'valeur' => $valeur,
-            'table' => $table
-        ]);
-    }  
+        if($this->isCsrfTokenValid('filtre_'.$champ, $request->get('_token'))){
+            $valeur = $request->get("recherche");
+            if($table !="")
+            {
+                $formations = $this->formationRepository->findByContainValueT($champ, $valeur, $table);
+            }else 
+            {
+                $formations = $this->formationRepository->findByContainValue($champ, $valeur);
+            }
+            $categories = $this->categorieRepository->findAll();
+            return $this->render(self::RETOURNEPFORMATION, [
+                'formations' => $formations,
+                'categories' => $categories,
+                'valeur' => $valeur,
+                'table' => $table
+            ]);
+        }   
+        return $this->redirectToRoute(self::RETOURNEPFORMATION);       
+        } 
+        
       
     
      /**

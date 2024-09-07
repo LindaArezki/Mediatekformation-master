@@ -18,7 +18,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 class FormationRepositoryTest extends KernelTestCase{
     
     /**
-     * Réécupère le repository de Formation
+     * Récupère le repository de Formation
      * @return FormationRepository
      */
     public function recupRepository(): FormationRepository {
